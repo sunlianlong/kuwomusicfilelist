@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>ios酷我音乐转化</title>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div>
+      <p>数据库文件：<input type="file" name="数据库文件" id="file"></p>
+      <p>歌曲文件夹：<input webkitdirectory multiple type="file" name="歌曲文件夹" id="fileDir"></p>
+    </div>
+    <button id="btn">开始处理</button>
+    <div>
+      注意：歌曲文件夹请提前自行备份，本程序会将源文件直接转码mp3;界面难看，敬请谅解
+      <img src="./images/Snipaste_2020-08-07_14-01-44.png" alt="">
+      <img src="./images/Snipaste_2020-08-07_14-02-17.png" alt="">
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
